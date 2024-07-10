@@ -28,6 +28,13 @@ public class Datos {
         }
         return cantAprobados;
     }    
+
+    public int notaPromedio(){
+        int notaPromedio = this.notaAlumno1 + this.notaAlumno2 + this.notaAlumno3;
+
+        return notaPromedio;
+
+    }
     
     
 }

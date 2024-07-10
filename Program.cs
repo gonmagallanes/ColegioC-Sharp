@@ -10,6 +10,8 @@ class Program
         Datos oDatos;
         oDatos = new Datos();
 
+       
+
         do{
 
             Console.Clear();
@@ -18,10 +20,10 @@ class Program
             Console.WriteLine("2- Ver cantidad de aprobados");
             Console.WriteLine("3- Ver promedio general");
             Console.WriteLine("4- Salir");
-
+            
             do{
 
-            oMenu.eleccion = int.Parse(Console.ReadLine());
+                oMenu.eleccion = int.Parse(Console.ReadLine());
 
             }while (oMenu.eleccion != 1 && oMenu.eleccion != 2 && oMenu.eleccion != 3 && oMenu.eleccion != 4);
         
@@ -46,6 +48,7 @@ class Program
                     Console.WriteLine($"Cantidad de aprobados: {oDatos.cantAprobados}");
                     break;
                 case 3: 
+                    Console.WriteLine($"La nota promedio es de: {oDatos.notaPromedio}");
                     break;
                 case 4: 
                     break;
