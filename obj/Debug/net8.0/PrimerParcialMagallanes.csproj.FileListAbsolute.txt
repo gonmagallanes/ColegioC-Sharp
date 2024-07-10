@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\bin\Debug\net8.0\PrimerParcialMagallanes.exe
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\bin\Debug\net8.0\PrimerParcialMagallanes.deps.json
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\bin\Debug\net8.0\PrimerParcialMagallanes.runtimeconfig.json
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\bin\Debug\net8.0\PrimerParcialMagallanes.dll
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\bin\Debug\net8.0\PrimerParcialMagallanes.pdb
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.sourcelink.json
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.dll
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\refint\PrimerParcialMagallanes.dll
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.pdb
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\PrimerParcialMagallanes.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\TECAS\Algoritmo\PrimerParcialMagallanes\obj\Debug\net8.0\ref\PrimerParcialMagallanes.dll
