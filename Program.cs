@@ -4,57 +4,82 @@ class Program
 {
     static void Main(string[] args)
     {
-        Menu oMenu;
-        oMenu = new Menu();
 
         Datos oDatos;
         oDatos = new Datos();
 
-       
-
         do{
 
-            Console.Clear();
             Console.WriteLine("Presione el numero con el cual quiera interactuar. ");
             Console.WriteLine("1- Introducir datos ");
             Console.WriteLine("2- Ver cantidad de aprobados");
             Console.WriteLine("3- Ver promedio general");
             Console.WriteLine("4- Salir");
             
-            do{
-
-                oMenu.eleccion = int.Parse(Console.ReadLine());
-
-            }while (oMenu.eleccion != 1 && oMenu.eleccion != 2 && oMenu.eleccion != 3 && oMenu.eleccion != 4);
+            oDatos.eleccion = int.Parse(Console.ReadLine());
         
-            switch(oMenu.eleccion){
+            switch(oDatos.eleccion){
                 case 1: 
+                    
                     Console.WriteLine("Introducir nombre del primer alumno");
                     oDatos.nombreAlumno1 = Console.ReadLine();
                     Console.WriteLine("Introducir nota del primer alumno");
-                    oDatos.notaAlumno1 = int.Parse(Console.ReadLine());
+                    oDatos.notaAlumno1 = int.Parse(Console.ReadLine());                
 
+                    if (oDatos.notaAlumno1 < 0 || oDatos.notaAlumno1 > 10) {
+                        do {
+                            Console.WriteLine("Por favor introducir una nota del 0 al 10");
+                            oDatos.notaAlumno1 = int.Parse(Console.ReadLine());         
+                        }while(oDatos.notaAlumno1 < 0 || oDatos.notaAlumno1 > 10);
+                    }                          
+                              
                     Console.WriteLine("Introducir nombre del segundo alumno");
                     oDatos.nombreAlumno2 = Console.ReadLine();
                     Console.WriteLine("Introducir nota del segundo alumno");
                     oDatos.notaAlumno2 = int.Parse(Console.ReadLine());
 
+                    if (oDatos.notaAlumno2 < 0 || oDatos.notaAlumno2 > 10) {
+                        do {
+                            Console.WriteLine("Por favor introducir una nota del 0 al 10");
+                            oDatos.notaAlumno2 = int.Parse(Console.ReadLine());         
+                        }while(oDatos.notaAlumno2 < 0 || oDatos.notaAlumno2 > 10);
+                    }
+
                     Console.WriteLine("Introducir nombre del tercer alumno");
                     oDatos.nombreAlumno3 = Console.ReadLine();
                     Console.WriteLine("Introducir nota del tercer alumno");
                     oDatos.notaAlumno3 = int.Parse(Console.ReadLine());
+
+                    if (oDatos.notaAlumno3 < 0 || oDatos.notaAlumno3 > 10) {
+                        do {
+                            Console.WriteLine("Por favor introducir una nota del 0 al 10");
+                            oDatos.notaAlumno3 = int.Parse(Console.ReadLine());         
+                        }while(oDatos.notaAlumno3 < 0 || oDatos.notaAlumno3 > 10);
+                    }
+
                     break;
                 case 2: 
-                    Console.WriteLine($"Cantidad de aprobados: {oDatos.cantAprobados}");
+                    Console.WriteLine("Cantidad de aprobados: " + oDatos.cantAprobados());
                     break;
                 case 3: 
-                    Console.WriteLine($"La nota promedio es de: {oDatos.notaPromedio}");
+                    Console.WriteLine("La nota promedio es de: " + oDatos.notaPromedio());
                     break;
-                case 4: 
+                default: 
+                    Console.Beep(659, 125); 
+                    Console.Beep(659, 125); 
+                    Thread.Sleep(125); 
+                    Console.Beep(659, 125); 
+                    Thread.Sleep(167); 
+                    Console.Beep(523, 125); 
+                    Console.Beep(659, 125); 
+                    Thread.Sleep(125); 
+                    Console.Beep(784, 125);
+                    Thread.Sleep(375); 
+                    Console.Beep(392, 125);
                     break;
             
             }
-        }while(oMenu.eleccion == 4);
+        }while(oDatos.eleccion != 4);
         
     }
 }

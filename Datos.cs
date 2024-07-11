@@ -2,11 +2,8 @@ using System;
 using System.Security;
 
 public class Datos {
-
-    Menu oMenu;
-    public Datos(){
-        this.oMenu = new Menu();
-    }
+    
+    public int eleccion{get;set;}
 
     public string nombreAlumno1 {get; set;}
     public string nombreAlumno2 {get; set;}
@@ -14,27 +11,28 @@ public class Datos {
     public int notaAlumno1 {get;set;}
     public int notaAlumno2 {get;set;}
     public int notaAlumno3 {get;set;}
+
     public int cantAprobados(){
-        int cantAprobados = 0;
+        int intAprobados = 0;
 
         if (this.notaAlumno1 >= 4){
-            cantAprobados++;
+           intAprobados = intAprobados + 1;
         }
         if (this.notaAlumno2 >= 4){
-            cantAprobados++;
+            intAprobados = intAprobados + 1;
         }
         if(this.notaAlumno3 >= 4){
-            cantAprobados++;
+            intAprobados = intAprobados + 1;
         }
-        return cantAprobados;
+        return intAprobados;
     }    
 
-    public int notaPromedio(){
-        int notaPromedio = this.notaAlumno1 + this.notaAlumno2 + this.notaAlumno3;
+    public double notaPromedio(){
+
+        double notaPromedio = (this.notaAlumno1 + this.notaAlumno2 + this.notaAlumno3) / 3;
 
         return notaPromedio;
 
     }
-    
     
 }
