@@ -3,7 +3,7 @@ using System.Security;
 
 public class Datos {
     
-    public int eleccion{get;set;}
+    public string eleccion{get;set;}
 
     public string nombreAlumno1 {get; set;}
     public string nombreAlumno2 {get; set;}
@@ -34,5 +34,7 @@ public class Datos {
         return notaPromedio;
 
     }
+
+   
     
 }

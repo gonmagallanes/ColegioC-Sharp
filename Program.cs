@@ -16,10 +16,10 @@ class Program
             Console.WriteLine("3- Ver promedio general");
             Console.WriteLine("4- Salir");
             
-            oDatos.eleccion = int.Parse(Console.ReadLine());
+            oDatos.eleccion = Console.ReadLine();
         
             switch(oDatos.eleccion){
-                case 1: 
+                case "1": 
 
                     Console.WriteLine("Introducir nombre del primer alumno");
                     oDatos.nombreAlumno1 = Console.ReadLine();
@@ -84,13 +84,13 @@ class Program
                     
 
                     break;
-                case 2: 
+                case "2": 
                     Console.WriteLine("Cantidad de aprobados: " + oDatos.cantAprobados());
                     break;
-                case 3: 
+                case "3": 
                     Console.WriteLine("La nota promedio es de: " + oDatos.notaPromedio());
                     break;
-                case 4: 
+                case "4": 
                     Console.Beep(659, 125); 
                     Console.Beep(659, 125); 
                     Thread.Sleep(125); 
@@ -105,7 +105,7 @@ class Program
                     break;
             
             }
-        }while(oDatos.eleccion != 4);
+        }while(oDatos.eleccion != "4");
         
     }
 }
